@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Nils Rayot</title>
+    <link rel="stylesheet" href="desing/style.css">
+    <link rel="stylesheet" href="projet.css">
+</head>
+<body>
+  <script>
+    function scrollToSection(sectionId) {
+      document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+    <header id="head">
+        <nav>
+            <figure>
+                <h2>N i l s <br>R a y o t</h2>
+            </figure>
+            <ul>
+                <li>
+                  <button onclick="scrollToSection('Page_Presentation')">
+                    <p>Presentation</p>
+                  </button>
+                </li>
+                <li>
+                  <button onclick="scrollToSection('Page_Projet')">
+                    <p>Mes projet</p>
+                  </button>
+                </li>
+                <li>
+                    <a id="btn_nav" href="form/form.html">Me contacter</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main id="Page_intro">
+      <p>Je suis un <span>devellopeur junior</span>  actuellement en formation en BUT informatique </p>
+      <button onclick="scrollToSection('Page_Projet')">
+        <img src="img/under_arr.png" alt="">
+      </button>
+    </main>
+
+    <main id="Page_Projet">
+      <h1>Mes Projets</h1>
+      <ul class="projects-list">
+          <li class="conteneur-proget-langage">
+              <div class="project">
+                <h2>Projet 1</h2>
+                <p>Création d'un site e-commerce moderne et réactif.</p>
+                <a href="#">Voir le projet</a>
+              </div>
+              <div class ="langage-proget">
+                <p>langage dev</p>
+              </div>
+          </li>
+          <li class="project">
+              <h2>Projet 2</h2>
+              <p>Développement d'une application mobile pour le fitness.</p>
+              <a href="#">Voir le projet</a>
+          </li>
+          <li class="project">
+              <h2>Projet 3</h2>
+              <p>Refonte complète d'un site institutionnel.</p>
+              <a href="#">Voir le projet</a>
+          </li>
+      </ul>
+  </main>
+</body>
+</html>
