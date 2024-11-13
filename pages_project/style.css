@@ -19,7 +19,6 @@ body{
 h1 a {
     text-decoration:none;
     color: #84D022;
-
 }
 h1{
     text-align: left;
@@ -76,7 +75,13 @@ h1#default{
 }
 #Cdefault{
     display: flex;
+    flex-direction: column;
     height: 100vh;
     align-items: center;
-    
+    justify-content: center;
+}
+#Cdefault a{
+    font-size: larger;
+    text-decoration:none;
+    color: #84D022;
 }
