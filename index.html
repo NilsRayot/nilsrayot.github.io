@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Nils Rayot</title>
+    <link rel="stylesheet" href="desing/style.css">
+    <link rel="stylesheet" href="desing/page-intro.css">
+    <link rel="stylesheet" href="desing/page-presentation.css">
+</head>
+<body>
+  <script>
+    function scrollToSection(sectionId) {
+      document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+  <header id="head">
+        <nav>
+            <figure>
+                <h2>N i l s <br>R a y o t</h2>
+            </figure>
+            <ul>
+                <li>
+                  <button onclick="scrollToSection('Page_Presentation')">
+                    <p>PRESENTATION</p>
+                  </button>
+                </li>
+                <li>
+                  <button onclick="scrollToSection('Page_Projet')">
+                    <p>MES PROJECTS</p>
+                  </button>
+                </li>
+                <!--
+                <li>
+                    <a id="btn_nav" href="contact/contact.html">ME CONTACTER</a>
+                </li>
+                -->
+            </ul>
+        </nav>
+  </header>
+  <main id="Page_intro">
+    <p>Je suis un <span>Devellopeur Backend Junior</span>  en 2eme anée de BUT informatique </p>
+    <button onclick="scrollToSection('Page_Presentation')">
+      <img src="img/under_arr.png" alt="">
+    </button>
+  </main>
+
+  <main id="Page_Presentation">
+    <div id="partG">
+      <h1>Page de presentation</h1>
+      <div id="txt_presentation">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores blanditiis maxime itaque sequi voluptates vero, quaerat veniam, officia atque, unde nesciunt saepe! Quam natus a quod aut quidem magni omnis?</p>
+      </div>
+      <div id="C_logiciel">
+        <h3>Logiciel Matrisés :</h3>
+        <img title="GIT" src="img/logo-git.png" alt="">
+        <img title="InteliJ" src="img/logo-inteliJ.png" alt="">
+        <img title="Clion" src="img/logo-clion.png" alt="">
+        <img title="Wireshark" src="img/logo-wireshark.png" alt="">
+        <img title="Vscode" src="img/logo-vscpde.png" alt="">
+      </div>
+    </div>
+    <div id="partD">
+      <div id="Competence">
+        <h3>Compétence : </h3>
+        <figure>
+          <img title="Java" src="img/java-logo-white.png" alt="Logo Java">
+          <div class="Conteneur_Comp">
+            <progress title="85%" id="C1_progress" max="100" value="85">85%></progress>
+          </div>
+        </figure>
+        <figure>
+          <img title="SQL" src="img/logo-sql.png" alt="Logo SQL">
+          <div class="Conteneur_Comp">
+            <progress title="80%" id="C2_progress" max="100" value="80">80%></progress>
+          </div>
+        </figure>
+        <figure>
+          <img title="Bash" src="img/logo-bash.png" alt="Logo Bash">
+          <div class="Conteneur_Comp">
+            <progress title="75%" id="C3_progress" max="100" value="75">75%></progress>
+          </div>
+        </figure>
+        <figure>
+          <img title="Php" src="img/logo-php.png" alt="Logo Php">
+          <div class="Conteneur_Comp">
+            <progress title="75%" id="C4_progress" max="100" value="75">75%></progress>
+          </div>
+        </figure>
+        <figure>
+          <img  title="C/C++" src="img/logo-c.png" alt="Logo C/C++">
+          <div class="Conteneur_Comp">
+            <progress title="70%" id="C5_progress" max="100" value="70">70%></progress>
+          </div>
+        </figure>
+        <figure>
+          <img title="HTML/CSS" src="img/logo-html.png" alt="Logo HTML/CSS">
+          <div class="Conteneur_Comp">
+            <progress title="60%" id="C6_progress" max="100" value="60">60%></progress>
+          </div>
+        </figure>       
+      </div>
+    </div>
+  </main>
+  <main id="Page_Projet">
+      <h1>Mes Projets</h1>
+      <ul class="projects-list">
+          <li class="main-conteneur" onclick="window.location.href='pages_project/project_1.html'">
+              <div class="date">
+                <h2>En cours de realisation</h2>
+              </div>
+              <div class="project">
+                <h2>Création et déploiement de services applicatifs/Développement d'une application</h2> 
+              </div>
+              <div class ="langage-proget">
+                <img src="img/logo-java.png" alt="logo python">
+              </div>
+          </li>
+          <li class="main-conteneur" onclick="window.location.href='pages_project/project_2.html'">
+            <div class="date">
+              <h2>Juin 2024</h2>
+            </div>
+            <div class="project">
+              <h2>Creation d'une aplication lourde, servant a organiser des evenements</h2>
+            </div>
+            <div class ="langage-proget">
+              <img src="img/java-logo-white.png" alt="logo python">
+            </div>
+          </li>
+          <li class="main-conteneur" onclick="window.location.href='pages_project/project_3.html'">
+              <div class="date">
+                <h2>Mai 2024</h2>
+              </div>
+              <div class="project">
+                <h2>Installation de services réseau</h2>
+              </div>
+              <div class ="langage-proget">
+                <img src="img/logo-bash.png" alt="logo python">
+              </div>
+          </li>
+          <li class="main-conteneur" onclick="window.location.href='pages_project/project_4.html'">
+            <div class="date">
+              <h2>Janvier 2023</h2>
+            </div>
+            <div class="project">
+              <h2>Creation d'un site web pour montrer la demarche RSE d'une entreprise grenobloise</h2>
+            </div>
+            <div class ="langage-proget">
+              <img src="img/logo-html.png" alt="logo python">
+              <img src="img/javascript-logo.webp" alt="logo python">
+            </div>
+        </li>
+          <li class="main-conteneur" onclick="window.location.href='pages_project/project_1.html'">
+            </div>
+            <div class="date">
+            </div>
+            <div class="project">
+              <h2>Voir tout les autres Projets</h2>
+            </div>
+            <div class ="langage-proget">
+              <img src="" alt="">
+            </div>
+        </li>
+      </ul>
+  </main>
+
+
+</body>
+</html>
