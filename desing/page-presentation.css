@@ -32,6 +32,12 @@ div#partG{
 div#txt_presentation{
     flex-basis: 30%;
 }
+div#txt_presentation p {
+    font-size: x-large;
+}
+div#txt_presentation p span{
+    color: #84D022; 
+}
 div#C_logiciel{
     display: flex;
     align-items: center;
