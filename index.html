@@ -9,8 +9,8 @@
   <link rel="stylesheet" href="./style/style.css">
   <script>
     function toggleView(view) {
-      document.getElementById('sysadmin').style.display = view === 'sysadmin' ? 'block' : 'none';
-      document.getElementById('dev').style.display = view === 'dev' ? 'block' : 'none';
+      document.getElementById('sysadmin').style.display = view === 'sysadmin' ? 'flex' : 'none';
+      document.getElementById('dev').style.display = view === 'dev' ? 'flex' : 'none';
     }
   </script>
 </head>
@@ -31,7 +31,7 @@
           <li class="nav-item"><a class="nav-link nav-hover" href="#presentation">Présentation</a></li>
           <li class="nav-item"><a class="nav-link nav-hover" href="#competences">Compétences</a></li>
           <li class="nav-item"><a class="nav-link nav-hover" href="#projets">Projets</a></li>
-          <li class="nav-item"><a class="nav-link nav-hover" href="#contact">Contact</a></li>
+          <!---<li class="nav-item"><a class="nav-link nav-hover" href="#contact">Contact</a></li>-->
         </ul>
       </div>
     </div>
@@ -49,10 +49,15 @@
   <!-- PRÉSENTATION -->
   <section id="presentation" class="container py-5">
     <div class="section-title accent">Présentation</div>
-    <p>Je suis un développeur junior se spécialisant actuellement dans le deploymant,l'herbergement de d'application et la maintenance de réseaux. </br>
-      Dans ce portfolio pour l'instant je presente essentiellement des projets réaliser dans un cardre scolaire car je ne trouve pas les projets personel sur lesquels je travail assez abouti pour l'instant.
-
+    <p>
+      Je suis un développeur junior, en cours de spécialisation dans le déploiement, l’hébergement d’applications et la maintenance de réseaux.
+      <br>
+      Ce portfolio présente pour l’instant essentiellement des projets réalisés dans un cadre scolaire, au sein de groupes de 2 à 7 personnes.
+      <br>
+      Ce portfolio et acctuelement en cour de devellopement. 
+    </p>
   </section>
+  
 
   <!-- COMPÉTENCES -->
   <section id="competences" class="container py-5">
@@ -60,8 +65,8 @@
       <div class="col">
         <h2>Mes Compétences</h2>
         <div class="btn-group" role="group">
-          <button class="btn btn-outline-primary" onclick="toggleView('sysadmin')">Sysadmin</button>
-          <button class="btn btn-outline-success" onclick="toggleView('dev')">Développement</button>
+          <button class="btn btn-outline-info" onclick="toggleView('sysadmin')">Sysadmin</button>
+          <button class="btn btn-outline-warning" onclick="toggleView('dev')">Développement</button>
         </div>
       </div>
     </div>
@@ -71,11 +76,12 @@
       <div class="col-md-8">
         <div class="card shadow-sm">
           <div class="card-body">
+            <h4 class="card-title accent mb-4">Compétences Sysadmin</h4>
             <div class="row g-4">
               <!--Virtualisation-->
               <div class="col-md-6 col-lg-4">
                 <div class="p-4 border rounded shadow-sm h-100">
-                  <h5 class="mb-3 text-success">Virtualisation</h5>
+                  <h5 class="mb-3 text-info">Virtualisation</h5>
                   <div class="d-flex justify-content-center flex-wrap gap-3">
                     <div class="text-center">
                       <div class="small">Hyperviseur (Proxmox)</div>
@@ -84,7 +90,6 @@
                       <div class="small">VM (Quemu/KVM)</div>
                     </div>
                     <div class="text-center">
-
                       <div class="small">Conteneur (Docker)</div>
                     </div>
                   </div>
@@ -93,10 +98,10 @@
               <!--Logiciels-->
               <div class="col-md-6 col-lg-4">
                 <div class="p-4 border rounded shadow-sm h-100">
-                  <h5 class="mb-3 text-success">Logiciels</h5>
+                  <h5 class="mb-3 text-info">Logiciels</h5>
                   <div class="d-flex justify-content-center flex-wrap gap-3">
                     <div class="text-center">
-                      <div class="small">Logiciels</div>
+                      <div class="small">Git</div>
                     </div>
                     <div class="text-center">
                       <div class="small">Wireshark</div>
@@ -107,10 +112,27 @@
                   </div>
                 </div>
               </div>
+              <!--Logiciels-->
+              <div class="col-md-6 col-lg-4">
+                <div class="p-4 border rounded shadow-sm h-100">
+                  <h5 class="mb-3 text-info">OS</h5>
+                  <div class="d-flex justify-content-center flex-wrap gap-3">
+                    <div class="text-center">
+                      <div class="small">Debian</div>
+                    </div>
+                    <div class="text-center">
+                      <div class="small">Ubuntu</div>
+                    </div>
+                    <div class="text-center">
+                      <div class="small">Windows(bases)</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <!--Langages de scripts-->
               <div class="col-md-6 col-lg-4">
                 <div class="p-4 border rounded shadow-sm h-100">
-                  <h5 class="mb-3 text-success">langages de scripts</h5>
+                  <h5 class="mb-3 text-info">Langages de scripts</h5>
                   <div class="d-flex justify-content-center flex-wrap gap-3">
                     <div class="text-center">
                       <div class="small">Bash (avancé)</div>
@@ -124,7 +146,7 @@
               <!--Réseaux-->
               <div class="col-md-6 col-lg-4">
                 <div class="p-4 border rounded shadow-sm h-100">
-                  <h5 class="mb-3 text-success">Services</h5>
+                  <h5 class="mb-3 text-info">Services</h5>
                   <div class="d-flex justify-content-center flex-wrap gap-3">
                     <div class="text-center">
                       <div class="small">DNS/DHCP</div>
@@ -141,7 +163,7 @@
               <!--Réseaux-->
               <div class="col-md-6 col-lg-4">
                 <div class="p-4 border rounded shadow-sm h-100">
-                  <h5 class="mb-3 text-success">Réseaux</h5>
+                  <h5 class="mb-3 text-info">Réseaux</h5>
                   <div class="d-flex justify-content-center flex-wrap gap-3">
                     <div class="text-center">
                       <div class="small">nftables/Par-feu</div>
@@ -166,12 +188,12 @@
       <div class="col-md-10">
         <div class="card shadow-sm">
           <div class="card-body">
-            <h4 class="card-title text-success mb-4">Compétences Développement</h4>
+            <h4 class="card-title accent mb-4">Compétences de Développement</h4>
             <div class="row g-4">
               <!-- Langages -->
               <div class="col-md-6 col-lg-4">
                 <div class="p-4 border rounded shadow-sm h-100">
-                  <h5 class="mb-3 text-success">Langages</h5>
+                  <h5 class="mb-3 text-warning">Langages</h5>
                   <div class="d-flex justify-content-center flex-wrap gap-3">
                     <div class="text-center">
                       <div class="small">C/C++/C#</div>
@@ -191,7 +213,7 @@
               <!-- Framework -->
               <div class="col-md-6 col-lg-4">
                 <div class="p-4 border rounded shadow-sm h-100">
-                  <h5 class="mb-3 text-success">Frameworks</h5>
+                  <h5 class="mb-3 text-warning">Frameworks</h5>
                   <div class="d-flex justify-content-center flex-wrap gap-3">
                     <div class="text-center">
                       <div class="small">Symphony</div>
@@ -208,7 +230,7 @@
               <!-- Bases de données -->
               <div class="col-md-6 col-lg-4">
                 <div class="p-4 border rounded shadow-sm h-100">
-                  <h5 class="mb-3 text-success">Structures de données</h5>
+                  <h5 class="mb-3 text-warning">Structures de données</h5>
                   <div class="d-flex justify-content-center flex-wrap gap-3">
                     <div class="text-center">
                       <div class="small">PostgreSQL</div>
@@ -225,7 +247,7 @@
               <!-- Tests -->
               <div class="col-md-6 col-lg-4">
                 <div class="p-4 border rounded shadow-sm h-100">
-                  <h5 class="mb-3 text-success">Tests & CI/CD</h5>
+                  <h5 class="mb-3 text-warning">Tests & CI/CD</h5>
                   <div class="d-flex  justify-content-center flex-wrap gap-3">
                     <div class="text-center">
                       <div class="small">Cypress</div>
@@ -242,7 +264,7 @@
               <!-- Frontend -->
               <div class="col-md-6 col-lg-4">
                 <div class="p-4 border rounded shadow-sm h-100">
-                  <h5 class="mb-3 text-success">Frontend</h5>
+                  <h5 class="mb-3 text-warning">Frontend</h5>
                   <div class="d-flex justify-content-center flex-wrap gap-3">
                     <div class="text-center">
                       <div class="small">HTML</div>
@@ -263,34 +285,55 @@
     </div>
   </section>
 
-  <!-- PROJETS -->
-  <section id="projets" class="container py-5">
-    <div class="section-title accent">Projets</div>
-    <div class="row g-4">
-      <div class="col-md-4">
-        <div class="card p-3 h-100">
-          <h5 class="card-title accent">Construction d'un réseaux</h5>
-          <p class="card-text">Creation d'un réseaux pour une entreprise de taille moyenne. DMZ+Datacenter+Réseaux de poste.</br> Nous y avont integrer entre autres les services suivant : DNS,DHCP,WIKI,SIEM,LDAP ...
-          <a href="image/V2.jpg" class="accent">Représentation graphique du Réseaux</a>
-          </p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card p-3 h-100">
-          <h5 class="card-title accent">Création d'une WebApp</h5>
-          <p class="card-text">Conception et realisation d'une application. en PHP,JS,HTML,CSS. Qui est une carte interactive permettant de trouver des maisons ou des personnes célebre ont vécus.
-            <a href="https://www.youtube.com/watch?v=K53gx4snMG8" class="accent">Lien vers la demo video</a>
-          </p>
-        </div>
-      </div>
-<!--       <div class="col-md-4">
-        <div class="card p-3 h-100">
-          <h5 class="card-title accent">Outil de backup</h5>
-          <p class="card-text">Script Bash pour sauvegarde incrémentale chiffrée avec gestion de rotation (rsync, gpg).</p>
-        </div>
-      </div>
-    </div> -->
-  </section>
+<!-- PROJETS -->
+<section id="projets" class="container py-5">
+  <h2 class="section-title accent mb-4">Projets</h2>
+
+  <div class="d-flex overflow-auto flex-nowrap gap-3 pb-3 scroll-hide">
+
+    <!-- Projet 1 -->
+    <div class="card flex-shrink-0 p-3 h-100" style="min-width: 300px; max-width: 350px;">
+      <h5 class="card-title accent">Construction d'un réseau</h5>
+      <p class="card-text">
+        Création d’un réseau pour une entreprise de taille moyenne : DMZ, datacenter, réseau utilisateurs.
+        Intégration de services : DNS, DHCP, Wiki, SIEM, LDAP, etc.
+        <br>
+        <a href="image/V2.jpg" class="accent">Représentation graphique du réseau</a>
+      </p>
+    </div>
+
+    <!-- Projet 2 -->
+    <div class="card flex-shrink-0 p-3 h-100" style="min-width: 300px; max-width: 350px;">
+      <h5 class="card-title accent">Création d'une WebApp</h5>
+      <p class="card-text">
+        Application interactive développée en PHP natif, JavaScript, HTML et CSS. Elle permet de localiser les maisons où ont vécu des personnes célèbres.
+        Une dimension sociale y est intégrée : commentaires, système d’amis, etc.
+        <br>
+        <a href="https://www.youtube.com/watch?v=K53gx4snMG8" class="accent">Lien vers la démo vidéo</a>
+      </p>
+    </div>
+
+    <!-- Projet 3 -->
+    <div class="card flex-shrink-0 p-3 h-100" style="min-width: 300px; max-width: 350px;">
+      <h5 class="card-title accent">Application de bureau</h5>
+      <p class="card-text">
+        Développement d'une application en Java et JavaFX pour la gestion d’événements sportifs de vol libre.
+        Elle est destinée aux organisateurs et permet de structurer, planifier et chiffrer les dimensions de l’événement.
+      </p>
+    </div>
+
+    <!-- Projet 4 -->
+    <div class="card flex-shrink-0 p-3 h-100" style="min-width: 300px; max-width: 350px;">
+      <h5 class="card-title accent">Déploiement de services réseau</h5>
+      <p class="card-text">
+        Installation d’un serveur Apache2 et d’un poste client Linux avec interface graphique.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+  
 
 <!--    CONTACT
   <section id="contact" class="container py-5">
